@@ -6,3 +6,24 @@ The data has 5 sets of 1000 images and corresponding labels.
 In the code we have implementated two models from scratch
 1. Unet 
 2. Deep lab model
+
+
+
+Results 
+1. Unet
+
+Train Accuracy: 98.34
+Dice score: 8.354591369628906
+
+
+Test Accuracy 97.24
+Dice score: 8.32595157623291
+
+
+
+2. Deep lab model
+Train Accuracy: 88.35
+Dice score: 7.973032474517822
+
+Test Accuracy: 88.39
+Dice score: 7.973648548126221
