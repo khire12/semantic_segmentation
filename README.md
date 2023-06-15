@@ -5,23 +5,29 @@ The data has 5 sets of 1000 images and corresponding labels.
 
 In the code we have implementated two models from scratch
 1. **Unet**
-2. **Deep lab model V3**
-3. **Deep lab VIT**
+2. **Deep lab model**
 
 
 ### Results 
 
 1. **Unet**
   - Train Accuracy: 98.34
-  - Train Dice score: 0.8354591369628906
+  - Train Dice score: 0.83545
   - Test Accuracy 97.24
-  - Test Dice score: 0.832595157623291
+  - Test Dice score: 0.83259
 
 2. **Deep lab model**
   - Train Accuracy: 88.35
-  - Train Dice score: 0.7973032474517822
+  - Train Dice score: 0.79730
   - Test Accuracy: 88.39
-  - Test Dice score: 0.7973648548126221
+  - Test Dice score: 0.79736
+
+2. **Deep lab model**
+  - Train Accuracy: 83.97
+  - Train Dice score: 0.77760
+  - Test Accuracy: 84.07
+  - Test Dice score: 0.77762
+
 
 Test (Left) and Train (right) loss for Deep Lab
 <div>
@@ -46,7 +52,3 @@ Predictions on UNet
 <div>
   <img src="https://github.com/khire12/visual_learning/blob/main/results/predictions_unet.jpeg" alt="Image 2" width="600"/>
 </div>
-
-
-
-
