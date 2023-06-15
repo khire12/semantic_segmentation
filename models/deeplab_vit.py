@@ -13,7 +13,7 @@ from torchsummary import summary
 import torch.nn.functional as F
 import torchvision.models as models
 
-DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+
 class DeepLabV3_vit(nn.Module):
     def __init__(self, num_classes=23):
         super(DeepLabV3_vit, self).__init__()
