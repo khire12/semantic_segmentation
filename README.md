@@ -16,13 +16,13 @@ In the code we have implementated two models from scratch
   - Test Accuracy 97.24
   - Test Dice score: 0.83259
 
-2. **Deep lab model**
+2. **Deep lab V3 model**
   - Train Accuracy: 88.35
   - Train Dice score: 0.79730
   - Test Accuracy: 88.39
   - Test Dice score: 0.79736
 
-2. **Deep lab model**
+2. **Deep lab V3 - ViT model**
   - Train Accuracy: 83.97
   - Train Dice score: 0.77760
   - Test Accuracy: 84.07
