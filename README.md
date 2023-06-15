@@ -21,3 +21,31 @@ In the code we have implementated two models from scratch
   - Train Dice score: 7.973032474517822
   - Test Accuracy: 88.39
   - Test Dice score: 7.973648548126221
+
+Test (Left) and Train (right) loss for Deep Lab
+<div>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/deeplab_test_loss.jpeg" title="Deeplab Test Loss" width="400"/>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/deeplab_training.jpeg" title="Deeplab Train Loss" width="400"/>
+</div>
+<br>
+Test (Left) and Train (right) loss for Unet
+<div>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/unet_testloss.jpeg" alt="Image 1" title="Unet Test Loss" width="400"/>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/unet_trainloss.jpeg" alt="Image 2" title="Unet Train Loss" width="400"/>
+</div>
+
+
+Predictions on Deep Lab
+<div>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/predictions_deeplab.jpeg" alt="Image 1" width="600"/>
+</div>
+
+
+Predictions on UNet
+<div>
+  <img src="https://github.com/khire12/visual_learning/blob/main/results/predictions_unet.jpeg" alt="Image 2" width="600"/>
+</div>
+
+
+
+
