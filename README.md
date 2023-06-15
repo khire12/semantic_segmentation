@@ -12,15 +12,15 @@ In the code we have implementated two models from scratch
 
 1. **Unet**
   - Train Accuracy: 98.34
-  - Train Dice score: 8.354591369628906
+  - Train Dice score: 0.8354591369628906
   - Test Accuracy 97.24
-  - Test Dice score: 8.32595157623291
+  - Test Dice score: 0.832595157623291
 
 2. **Deep lab model**
   - Train Accuracy: 88.35
-  - Train Dice score: 7.973032474517822
+  - Train Dice score: 0.7973032474517822
   - Test Accuracy: 88.39
-  - Test Dice score: 7.973648548126221
+  - Test Dice score: 0.7973648548126221
 
 Test (Left) and Train (right) loss for Deep Lab
 <div>
