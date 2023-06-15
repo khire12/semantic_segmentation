@@ -22,7 +22,7 @@ In the code we have implementated two models from scratch
   - Test Accuracy: 88.39
   - Test Dice score: 0.79736
 
-2. **Deep lab V3 - ViT model**
+3. **Deep lab V3 - ViT model**
   - Train Accuracy: 83.97
   - Train Dice score: 0.77760
   - Test Accuracy: 84.07
@@ -40,7 +40,11 @@ Test (Left) and Train (right) loss for Unet
     <img src="https://github.com/khire12/visual_learning/blob/main/results/unet_testloss.jpeg" alt="Image 1" title="Unet Test Loss" width="400"/>
     <img src="https://github.com/khire12/visual_learning/blob/main/results/unet_trainloss.jpeg" alt="Image 2" title="Unet Train Loss" width="400"/>
 </div>
-
+Test (Left) and Train (right) loss for Unet
+<div>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_TestLoss.png" alt="Image 2" title="Deeplab_V3_ViT Test Loss" width="400"/>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_TrainLoss.png" alt="Image 1" title="Deeplab_V3_ViT Train Loss" width="400"/>
+</div>
 
 Predictions on Deep Lab
 <div>
