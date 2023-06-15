@@ -6,7 +6,7 @@ The data has 5 sets of 1000 images and corresponding labels.
 In the code we have implementated two models from scratch
 1. **Unet**
 2. **Deep lab model**
-
+3. **Deep lab V3 - ViT**
 
 ### Results 
 
@@ -55,4 +55,12 @@ Predictions on Deep Lab
 Predictions on UNet
 <div>
   <img src="https://github.com/khire12/visual_learning/blob/main/results/predictions_unet.jpeg" alt="Image 2" width="600"/>
+</div>
+
+Predictions on Deep Lab V3 - ViT
+<div>
+  <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_SegmentationResults.png" alt="Image 2" width="600"/>
+</div>
+<div>
+  <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_SegmentationResults2.png" alt="Image 2" width="600"/>
 </div>
