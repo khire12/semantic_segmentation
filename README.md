@@ -5,7 +5,8 @@ The data has 5 sets of 1000 images and corresponding labels.
 
 In the code we have implementated two models from scratch
 1. **Unet**
-2. **Deep lab model**
+2. **Deep lab model V3**
+3. **Deep lab VIT**
 
 
 ### Results 
