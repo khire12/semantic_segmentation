@@ -64,5 +64,5 @@ Predictions on Deep Lab V3 - ViT
 
 
 <div>
-  <img src="https://github.com/khire12/visual_learning/blob/main/results/streamlit/streamlit_output.png" alt="Image 2" width="600"/>
+  <img src="https://github.com/khire12/visual_learning/blob/main/streamlit/streamlit_output.png" alt="Image 2" width="600"/>
 </div>
