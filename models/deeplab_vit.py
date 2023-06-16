@@ -98,62 +98,62 @@ class Decoder(nn.Module):
         
         return x
 
-deeplab_vit_model = DeepLabV3_vit(num_classes=23).to(DEVICE)
+# deeplab_vit_model = DeepLabV3_vit(num_classes=23).to(DEVICE)
 
 
-LEARNING_RATE = 1e-4
-num_epochs = 8
-train_batch,test_batch = get_images(data_dir, transform = t1, batch_size = 32)
-loss_fn = nn.CrossEntropyLoss()
-optimizer = optim.Adam(deeplab_vit_model.parameters(), lr=LEARNING_RATE)
-scaler = torch.cuda.amp.GradScaler()
-loss = 0
-train_loss_list = []
-test_loss_list = []
-test_interval = 2
-# Training loop
+# LEARNING_RATE = 1e-4
+# num_epochs = 8
+# train_batch,test_batch = get_images(data_dir, transform = t1, batch_size = 32)
+# loss_fn = nn.CrossEntropyLoss()
+# optimizer = optim.Adam(deeplab_vit_model.parameters(), lr=LEARNING_RATE)
+# scaler = torch.cuda.amp.GradScaler()
+# loss = 0
+# train_loss_list = []
+# test_loss_list = []
+# test_interval = 2
+# # Training loop
 
-for epoch in range(num_epochs):
-    loop = tqdm(enumerate(train_batch), total=len(train_batch))
-    deeplab_vit_model.train()
-    train_loss = 0
-    for batch_idx, (data, targets) in loop:
-        data = data.to(DEVICE)
-        targets = targets.to(DEVICE)
-        targets = targets.type(torch.long)
+# for epoch in range(num_epochs):
+#     loop = tqdm(enumerate(train_batch), total=len(train_batch))
+#     deeplab_vit_model.train()
+#     train_loss = 0
+#     for batch_idx, (data, targets) in loop:
+#         data = data.to(DEVICE)
+#         targets = targets.to(DEVICE)
+#         targets = targets.type(torch.long)
 
-        # Forward pass
-        with torch.cuda.amp.autocast():
-            predictions = deeplab_vit_model(data)
-            loss = loss_fn(predictions, targets)
-        #deeplab_vit_loss_list.append(loss)
-        # Backward pass and optimization
-        optimizer.zero_grad()
-        scaler.scale(loss).backward()
-        scaler.step(optimizer)
-        scaler.update()
-        loop.set_postfix(loss=loss.item())
-        train_loss += loss.detach().item()
+#         # Forward pass
+#         with torch.cuda.amp.autocast():
+#             predictions = deeplab_vit_model(data)
+#             loss = loss_fn(predictions, targets)
+#         #deeplab_vit_loss_list.append(loss)
+#         # Backward pass and optimization
+#         optimizer.zero_grad()
+#         scaler.scale(loss).backward()
+#         scaler.step(optimizer)
+#         scaler.update()
+#         loop.set_postfix(loss=loss.item())
+#         train_loss += loss.detach().item()
         
-    train_loss = train_loss/len(train_batch)
-    train_loss_list.append(train_loss)
+#     train_loss = train_loss/len(train_batch)
+#     train_loss_list.append(train_loss)
     
     
-#plot_loss(deeplab_vit_loss_list)
-    if epoch % test_interval == 0:
-        loop_test = tqdm(enumerate(test_batch), total=len(test_batch))
-        deeplab_vit_model.eval()
-        test_loss = 0
-        for batch_idx, (data, targets) in loop_test:
-            data = data.to(DEVICE)
-            targets = targets.to(DEVICE)
-            targets = targets.type(torch.long)
-            predictions = deeplab_vit_model(data)
-            loss = loss_fn(predictions, targets)
-            loop_test.set_postfix(loss=loss.item())
-            test_loss += loss.detach().item()     
+# #plot_loss(deeplab_vit_loss_list)
+#     if epoch % test_interval == 0:
+#         loop_test = tqdm(enumerate(test_batch), total=len(test_batch))
+#         deeplab_vit_model.eval()
+#         test_loss = 0
+#         for batch_idx, (data, targets) in loop_test:
+#             data = data.to(DEVICE)
+#             targets = targets.to(DEVICE)
+#             targets = targets.type(torch.long)
+#             predictions = deeplab_vit_model(data)
+#             loss = loss_fn(predictions, targets)
+#             loop_test.set_postfix(loss=loss.item())
+#             test_loss += loss.detach().item()     
 
-        test_loss = test_loss/len(test_batch)
-        test_loss_list.append(test_loss)
+#         test_loss = test_loss/len(test_batch)
+#         test_loss_list.append(test_loss)
 
     
