@@ -40,10 +40,10 @@ Test (Left) and Train (right) loss for Unet
     <img src="https://github.com/khire12/visual_learning/blob/main/results/unet_testloss.jpeg" alt="Image 1" title="Unet Test Loss" width="400"/>
     <img src="https://github.com/khire12/visual_learning/blob/main/results/unet_trainloss.jpeg" alt="Image 2" title="Unet Train Loss" width="400"/>
 </div>
-Test (Left) and Train (right) loss for Unet
+Test (Left) and Train (right) loss for Deep Lab VIT
 <div>
-    <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_TestLoss.png" alt="Image 2" title="Deeplab_V3_ViT Test Loss" width="400"/>
-    <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_TrainLoss.png" alt="Image 1" title="Deeplab_V3_ViT Train Loss" width="400"/>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/deeplab_vit_test.png" alt="Image 2" title="Deeplab_V3_ViT Test Loss" width="400"/>
+    <img src="https://github.com/khire12/visual_learning/blob/main/results/deeplab_vit_train.png" alt="Image 1" title="Deeplab_V3_ViT Train Loss" width="400"/>
 </div>
 
 Predictions on Deep Lab
