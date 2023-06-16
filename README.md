@@ -62,6 +62,9 @@ Predictions on Deep Lab V3 - ViT
   <img src="https://github.com/khire12/visual_learning/blob/main/results/Deeplab_V3_ViT_SegmentationResults2.png" alt="Image 2" width="600"/>
 </div>
 
+<br>
+
+# Streamlit Application
 
 <div>
   <img src="https://github.com/khire12/visual_learning/blob/main/streamlit/streamlit_output.png" alt="Image 2" width="600"/>
