@@ -1,5 +1,14 @@
 # Visual Learning - Semantic Segmentation of Self Driving Cars
 
+
+# Streamlit Application
+
+<div>
+  <img src="https://github.com/khire12/visual_learning/blob/main/streamlit/streamlit_output.png" alt="Image 2" width="600"/>
+</div>
+
+
+
 In the code we have implementated two models from scratch
 1. **Unet**
 2. **Deep lab V3**
@@ -63,9 +72,3 @@ Predictions on Deep Lab V3 - ViT
 </div>
 
 <br>
-
-# Streamlit Application
-
-<div>
-  <img src="https://github.com/khire12/visual_learning/blob/main/streamlit/streamlit_output.png" alt="Image 2" width="600"/>
-</div>
